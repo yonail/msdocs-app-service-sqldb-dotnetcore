@@ -1,0 +1,14 @@
+﻿@model IEnumerable<DotNetCoreSqlDb.Models.FileViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ol>
+    @foreach (var item in Model)
+    {
+        <li>@Html.DisplayFor(modelItem => item.Name)</li>
+    }
+</ol>
